@@ -1,19 +1,14 @@
-int main()
+# include "Harl.hpp"
+#include <iostream>
+
+int main(int argc, char **argv)
 {
-{
-Weapon club = Weapon("crude spiked club");
-HumanA bob("Bob", club);
-bob.attack();
-club.setType("some other type of club");
-bob.attack();
-}
-{
-Weapon club = Weapon("crude spiked club");
-HumanB jim("Jim");
-jim.setWeapon(club);
-jim.attack();
-club.setType("some other type of club");
-jim.attack();
-}
-return 0;
+    Harl harl;
+    if(argc != 2)
+    {
+        std::cout << "Usage : ./harlFilter <level>" << std::endl;
+        return 1;
+    }
+    harl.complain(argv[1]);
+    return 0;
 }

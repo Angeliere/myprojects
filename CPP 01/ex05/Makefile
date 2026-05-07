@@ -1,11 +1,12 @@
 
-NAME = megaphone
+NAME = Harl
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 RM = rm -f
 OBJ_DIR = obj
 
-SRCS = megaphone.cpp
+SRCS = Harl.cpp \
+	   main.cpp
 OBJS = $(SRCS:%.cpp=$(OBJ_DIR)/%.o)
 
 all: $(NAME)
