@@ -1,13 +1,11 @@
 
-NAME = BraiiiiiiinnnzzzZ
+NAME = fixed
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 RM = rm -f
 OBJ_DIR = obj
 
-SRCS = newZombie.cpp \
-		randomChump.cpp \
-		Zombie.cpp \
+SRCS =  Fixed.cpp \
 		main.cpp
 OBJS = $(SRCS:%.cpp=$(OBJ_DIR)/%.o)
 
